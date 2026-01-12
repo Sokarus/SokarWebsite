@@ -1,0 +1,92 @@
+@use '../../sharedStyles/colors' as colors;
+@use '../../sharedStyles/borders' as borders;
+@use '../../sharedStyles/indents' as indents;
+
+.Button {
+  border: borders.$none;
+  cursor: pointer;
+  height: max-content;
+  padding: indents.$none;
+
+  &.Default {
+    background-color: colors.$godfather-dark-1;
+  }
+
+  &.Icon {
+    background: none;
+    width: 24px;
+    height: 24px;
+
+    svg {
+      fill: colors.$godfather-orange-1;
+    }
+
+    &:hover {
+      svg {
+        fill: colors.$godfather-orange-2;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: colors.$godfather-orange-3;
+      }
+    }
+  }
+
+  &.Ghost {
+    background: none;
+    padding: indents.$none indents.$m;
+
+    :hover {
+      color: colors.$godfather-orange-1;
+      text-shadow: 0.5px 0.5px 1px colors.$godfather-acent-3;
+      transition: all 0.15s ease-in;
+      text-decoration: overline;
+    }
+
+    :active {
+      transition: none;
+      color: colors.$godfather-orange-3;
+    }
+  }
+
+  &.Action {
+    background-color: colors.$godfather-orange-1;
+    padding: indents.$m;
+    border-radius: borders.$s;
+
+    &:hover {
+      background-color: colors.$godfather-orange-2;
+      transition: all 0.15s ease-in;
+    }
+
+    &:active {
+      background-color: colors.$godfather-orange-3;
+    }
+  }
+
+  &.ListItem {
+    background-color: colors.$godfather-dark-3;
+    padding: indents.$s;
+
+    &:first-child {
+      border-top-left-radius: borders.$ss;
+      border-top-right-radius: borders.$ss;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: borders.$ss;
+      border-bottom-right-radius: borders.$ss;
+    }
+
+    &:hover {
+      background-color: colors.$godfather-orange-1;
+      transition: all 0.15s ease-in;
+    }
+
+    &:active {
+      background-color: colors.$godfather-orange-2;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@use '../../sharedStyles/colors' as colors;
+@use '../../sharedStyles/fonts' as fonts;
+
+.Text {
+  &.White {
+    color: colors.$godfather-light-4;
+  }
+
+  &.Dark {
+    color: colors.$godfather-dark-1;
+  }
+
+  &.H1 {
+    font-size: fonts.$size-h3;
+    font-weight: fonts.$weight-l;
+  }
+}

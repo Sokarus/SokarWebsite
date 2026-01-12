@@ -1,0 +1,22 @@
+@use '../../sharedStyles/colors' as colors;
+@use '../../sharedStyles/borders' as borders;
+@use '../../sharedStyles/indents' as indents;
+
+.DropDown {
+  &Wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  &List {
+    position: absolute;
+    left: -60px;
+    top: 20px;
+    background-color: colors.$godfather-dark-3;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: indents.$m indents.$none;
+    border-radius: borders.$ss;
+  }
+}

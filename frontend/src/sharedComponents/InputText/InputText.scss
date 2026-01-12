@@ -1,0 +1,30 @@
+@use '../../sharedStyles/indents' as indents;
+@use '../../sharedStyles/fonts' as fonts;
+@use '../../sharedStyles/colors' as colors;
+@use '../../sharedStyles/borders' as borders;
+
+.InputTextWrapper {
+  height: 36px;
+  padding: indents.$none indents.$l;
+  font-size: fonts.$size-l;
+  color: colors.$godfather-dark-4;
+  background-color: colors.$godfather-light-2;
+  border: 2px solid colors.$godfather-acent-3;
+  border-radius: borders.$s;
+  outline: none;
+  transition: all 0.25s ease;
+
+  &::placeholder {
+    color: colors.$godfather-acent-3;
+    opacity: 1;
+  }
+
+  &:focus {
+    border-color: colors.$godfather-muted-2;
+    box-shadow: colors.$godfather-dark-1;
+  }
+
+  &:hover {
+    background-color: colors.$godfather-light-3;
+  }
+}

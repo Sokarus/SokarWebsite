@@ -1,0 +1,13 @@
+@use '../../sharedStyles/colors' as colors;
+@use '../../sharedStyles/indents' as indents;
+
+.HeaderWrapper {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: indents.$m indents.$m-vw;
+  background-color: colors.$godfather-dark-2;
+}

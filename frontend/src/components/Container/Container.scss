@@ -1,0 +1,5 @@
+@use '../../sharedStyles/indents' as indents;
+
+.ContainerWrapper {
+  padding: indents.$xl 10vw 0 10vw;
+}

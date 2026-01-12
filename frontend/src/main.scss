@@ -1,0 +1,16 @@
+@use 'sharedStyles/colors' as colors;
+@use 'sharedStyles/indents' as indents;
+@use 'sharedStyles/fonts' as fonts;
+
+body {
+  margin: indents.$none;
+  padding: indents.$none;
+  background-color: colors.$godfather-light-1;
+}
+
+span,
+input {
+  font-size: fonts.$size-m;
+  font-weight: fonts.$weight-m;
+  user-select: none;
+}
