@@ -26,7 +26,8 @@
       "@components/*": ["./src/components/*"],
       "@sharedComponents/*": ["./src/sharedComponents/*"],
       "@constants/*": ["./src/constants/*"],
-      "@pages/*": ["./src/pages/*"]
+      "@pages/*": ["./src/pages/*"],
+      "@sharedIcons/*": ["./src/sharedIcons/*"]
     }
   },
   "include": ["vite.config.ts"]

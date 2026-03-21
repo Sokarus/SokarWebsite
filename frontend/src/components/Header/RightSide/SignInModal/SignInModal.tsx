@@ -2,11 +2,13 @@ import { useState } from 'react';
 import { type FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Modal, InputText, Button, Text } from '@/sharedComponents';
+import { PhoneMask } from '@/components';
 import { type SignInModalProps } from './';
 import './SignInModal.scss';
 
 export const SignInModal: FC<SignInModalProps> = ({ isOpened, onClose }) => {
   const [phone, setPhone] = useState<string>('');
+  const [phoneMask, setPhoneMask] = useState<string>('+995');
   const [password, setPassword] = useState<string>('');
   const { t } = useTranslation();
 
@@ -16,7 +18,10 @@ export const SignInModal: FC<SignInModalProps> = ({ isOpened, onClose }) => {
 
   const content = (
     <div className="SignInModalContent">
-      <InputText value={phone} onChange={setPhone} placeholder={t('phone')} />
+      <div className="SignInModalContentPhone">
+        <PhoneMask value={phoneMask} onSelect={setPhoneMask} />
+        <InputText value={phone} onChange={setPhone} placeholder={t('phone')} />
+      </div>
       <InputText value={password} onChange={setPassword} placeholder={t('password')} />
       <div className="SignInModalButtons">
         <Button

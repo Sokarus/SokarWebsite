@@ -2,9 +2,9 @@ import { type FC } from 'react';
 import { type ButtonProps } from './';
 import './Button.scss';
 
-export const Button: FC<ButtonProps> = ({ onClick, content, style = 'Default' }) => {
+export const Button: FC<ButtonProps> = ({ onClick, content, style = 'Default', ref = null }) => {
   return (
-    <button className={`Button ${style}`} onClick={onClick}>
+    <button ref={ref} className={`Button ${style}`} onClick={onClick}>
       {content}
     </button>
   );

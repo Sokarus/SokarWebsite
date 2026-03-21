@@ -21,6 +21,7 @@ export default defineConfig({
       '@sharedComponents': path.resolve(__dirname, '../src/sharedComponents'),
       '@constants': path.resolve(__dirname, '../src/constants'),
       '@pages': path.resolve(__dirname, '../src/pages'),
+      '@sharedIcons': path.resolve(__dirname, '../src/sharedIcons'),
     },
   },
 });

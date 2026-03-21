@@ -5,3 +5,4 @@ export * from './Icon';
 export * from './DropDown';
 export * from './InputText';
 export * from './Modal';
+export * from './Select';
