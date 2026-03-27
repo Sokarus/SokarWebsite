@@ -1,0 +1,8 @@
+@use '../../sharedStyles/indents' as indents;
+
+.ContactWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: indents.$l;
+  justify-content: center;
+}

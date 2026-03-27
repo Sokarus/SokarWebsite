@@ -7,9 +7,10 @@
   cursor: pointer;
   height: max-content;
   padding: indents.$none;
+  width: 100%;
 
   &.Default {
-    background-color: colors.$godfather-dark-1;
+    background-color: colors.$main-color-1;
   }
 
   &.Icon {
@@ -18,20 +19,20 @@
     height: 24px;
 
     svg {
-      fill: colors.$godfather-orange-1;
+      fill: colors.$accent-color-1;
       width: 24px;
       height: 24px;
     }
 
     &:hover {
       svg {
-        fill: colors.$godfather-orange-2;
+        fill: colors.$accent-color-2;
       }
     }
 
     &:active {
       svg {
-        fill: colors.$godfather-orange-3;
+        fill: colors.$accent-color-3;
       }
     }
   }
@@ -40,36 +41,54 @@
     background: none;
     padding: indents.$none indents.$m;
 
+    &.Selected > span {
+      color: colors.$accent-color-3;
+    }
+
     :hover {
-      color: colors.$godfather-orange-1;
-      text-shadow: 0.5px 0.5px 1px colors.$godfather-acent-3;
+      color: colors.$accent-color-1;
+      text-shadow: 1px 1px 4px colors.$second-color-1;
       transition: all 0.15s ease-in;
-      text-decoration: overline;
     }
 
     :active {
       transition: none;
-      color: colors.$godfather-orange-3;
+      color: colors.$accent-color-3;
+      font-weight: 900;
     }
   }
 
   &.Action {
-    background-color: colors.$godfather-orange-1;
+    background-color: colors.$accent-color-2-60;
     padding: indents.$m;
     border-radius: borders.$s;
 
     &:hover {
-      background-color: colors.$godfather-orange-2;
+      background-color: colors.$accent-color-1;
       transition: all 0.15s ease-in;
     }
 
     &:active {
-      background-color: colors.$godfather-orange-3;
+      background-color: colors.$accent-color-3;
+    }
+  }
+
+  &.Store {
+    background-color: colors.$white-color;
+    padding: indents.$m;
+
+    &:hover {
+      background-color: colors.$main-color-7;
+      transition: all 0.15s ease-in;
+    }
+
+    &:active {
+      background-color: colors.$main-color-6;
     }
   }
 
   &.ListItem {
-    background-color: colors.$godfather-dark-3;
+    background-color: colors.$main-color-1;
     padding: indents.$s;
 
     &:first-child {
@@ -83,12 +102,16 @@
     }
 
     &:hover {
-      background-color: colors.$godfather-orange-1;
+      background-color: colors.$accent-color-1;
       transition: all 0.15s ease-in;
     }
 
     &:active {
-      background-color: colors.$godfather-orange-2;
+      background-color: colors.$accent-color-2;
     }
   }
+}
+
+.Link {
+  text-decoration: none;
 }

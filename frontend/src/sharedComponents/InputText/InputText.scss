@@ -4,27 +4,29 @@
 @use '../../sharedStyles/borders' as borders;
 
 .InputTextWrapper {
+  font-family: 'SecondFont';
   height: 36px;
   padding: indents.$none indents.$l;
-  font-size: fonts.$size-l;
-  color: colors.$godfather-dark-4;
-  background-color: colors.$godfather-light-2;
-  border: 2px solid colors.$godfather-acent-3;
+  font-size: fonts.$size-m;
+  font-weight: fonts.$weight-ss;
+  color: colors.$white-color;
+  background-color: colors.$main-color-1;
+  border: 2px solid colors.$main-color-5;
   border-radius: borders.$s;
   outline: none;
   transition: all 0.25s ease;
 
   &::placeholder {
-    color: colors.$godfather-acent-3;
+    color: colors.$main-color-5;
     opacity: 1;
   }
 
   &:focus {
-    border-color: colors.$godfather-muted-2;
-    box-shadow: colors.$godfather-dark-1;
+    border-color: colors.$main-color-3;
+    box-shadow: colors.$main-color-1;
   }
 
   &:hover {
-    background-color: colors.$godfather-light-3;
+    background-color: colors.$main-color-2;
   }
 }

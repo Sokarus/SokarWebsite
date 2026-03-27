@@ -1,0 +1,25 @@
+@use '../../../../sharedStyles/indents' as indents;
+
+.StoreWrapper {
+  display: flex;
+
+  > a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    gap: indents.$xl;
+
+    @media screen and (max-width: 600px) {
+      gap: 0;
+    }
+
+    > a {
+      width: 200px;
+
+      @media screen and (max-width: 600px) {
+        width: 100px;
+      }
+    }
+  }
+}

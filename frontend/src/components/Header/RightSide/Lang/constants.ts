@@ -9,8 +9,8 @@ export const languages: DropDownItem[] = [
     label: 'English',
     value: 'eng',
   },
-  {
-    label: 'Georgian',
-    value: 'geo',
-  },
+  // {
+  //   label: 'Georgian',
+  //   value: 'geo',
+  // },
 ];

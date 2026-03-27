@@ -1,9 +1,7 @@
 {
-  "sign_in": "Sign in",
-  "sign_up": "Sign up",
-  "catalog": "Catalog",
-  "make_a_deal": "Make a deal",
-  "phone": "Phone",
-  "password": "Password",
-  "registration": "Registration"
+  "sokar": "SOKAR",
+  "albums": "ALBUMS",
+  "singles": "SINGLES",
+  "contact": "CONTACT",
+  "portfolio": "PORTFOLIO"
 }

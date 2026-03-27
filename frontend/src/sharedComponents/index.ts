@@ -6,3 +6,4 @@ export * from './DropDown';
 export * from './InputText';
 export * from './Modal';
 export * from './Select';
+export * from './InputTextArea';

@@ -1,0 +1,34 @@
+@use '../../sharedStyles/indents' as indents;
+@use '../../sharedStyles/fonts' as fonts;
+@use '../../sharedStyles/colors' as colors;
+@use '../../sharedStyles/borders' as borders;
+
+.InputTextAreaWrapper {
+  font-family: 'SecondFont';
+  resize: vertical;
+  min-height: 100px;
+  padding: indents.$none indents.$l;
+  font-size: fonts.$size-m;
+  font-weight: fonts.$weight-ss;
+  color: colors.$white-color;
+  background-color: colors.$main-color-1;
+  border: 2px solid colors.$main-color-5;
+  border-radius: borders.$s;
+  outline: none;
+  transition: all 0.25s ease;
+  align-content: center;
+
+  &::placeholder {
+    color: colors.$main-color-5;
+    opacity: 1;
+  }
+
+  &:focus {
+    border-color: colors.$main-color-3;
+    box-shadow: colors.$main-color-1;
+  }
+
+  &:hover {
+    background-color: colors.$main-color-2;
+  }
+}

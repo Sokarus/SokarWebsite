@@ -9,5 +9,10 @@
   align-items: center;
   height: 30px;
   padding: indents.$m indents.$m-vw;
-  background-color: colors.$godfather-dark-2;
+  background-color: colors.$main-color-1-20;
+  transition: background-color 0.3s ease;
+
+  &.Scrolled {
+    background-color: colors.$main-color-1;
+  }
 }

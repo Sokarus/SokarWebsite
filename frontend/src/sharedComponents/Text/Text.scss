@@ -2,12 +2,20 @@
 @use '../../sharedStyles/fonts' as fonts;
 
 .Text {
+  &.Main {
+    color: colors.$main-color-5;
+  }
+
   &.White {
-    color: colors.$godfather-light-4;
+    color: colors.$white-color;
   }
 
   &.Dark {
-    color: colors.$godfather-dark-1;
+    color: colors.$main-color-1;
+  }
+
+  &.Accent {
+    color: colors.$second-color-5;
   }
 
   &.H1 {

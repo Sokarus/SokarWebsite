@@ -1,0 +1,9 @@
+@use '../../sharedStyles/indents' as indents;
+
+.SinglesWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: indents.$l;
+  width: 100%;
+  text-align: center;
+}

@@ -2,15 +2,39 @@
 @use 'sharedStyles/indents' as indents;
 @use 'sharedStyles/fonts' as fonts;
 
-body {
-  margin: indents.$none;
-  padding: indents.$none;
-  background-color: colors.$godfather-light-1;
+@font-face {
+  font-family: 'DefaultFont';
+  src:
+    local('DefaultFont'),
+    url('./fonts/Tsap-Tsarap.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SecondFont';
+  src:
+    local('SecondFont'),
+    url('./fonts/Miracode.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 span,
+div,
 input {
-  font-size: fonts.$size-m;
+  font-family: 'DefaultFont', sans-serif;
   font-weight: fonts.$weight-m;
   user-select: none;
+}
+
+body {
+  margin: indents.$none;
+  padding: indents.$none;
+  background-color: colors.$black-color;
+  background-image: url('https://storage.yandexcloud.net/sokar/sokar-website/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }

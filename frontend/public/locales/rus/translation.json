@@ -1,9 +1,7 @@
 {
-  "sign_in": "Вход",
-  "sign_up": "Регистрация",
-  "catalog": "Каталог",
-  "make_a_deal": "Заключить сделку",
-  "phone": "Телефон",
-  "password": "Пароль",
-  "registration": "Регистрация"
+  "sokar": "СОКАР",
+  "albums": "АЛЬБОМЫ",
+  "singles": "СИНГЛЫ",
+  "contact": "СВЯЗЬ",
+  "portfolio": "ПОРТФОЛИО"
 }

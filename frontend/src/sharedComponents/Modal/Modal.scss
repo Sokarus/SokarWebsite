@@ -6,7 +6,7 @@
   &Wrapper {
     position: fixed;
     inset: 0;
-    background: colors.$godfather-dark-1-40;
+    background: colors.$main-color-2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,12 +23,12 @@
   }
 
   &Content {
-    background: colors.$godfather-orange-4;
+    background: colors.$main-color-3;
     border-radius: borders.$l;
     width: 100%;
     max-width: 520px;
     padding: indents.$xl;
-    box-shadow: 0 10px 30px colors.$godfather-dark-1;
+    box-shadow: 0 10px 30px colors.$main-color-4;
     transform: translateY(20px) scale(0.95);
     transition: transform 0.25s ease;
     z-index: 101;

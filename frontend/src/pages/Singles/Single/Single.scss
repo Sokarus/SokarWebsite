@@ -1,0 +1,27 @@
+@use '../../../sharedStyles/colors' as colors;
+@use '../../../sharedStyles/borders' as borders;
+@use '../../../sharedStyles/indents' as indents;
+
+.SingleWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: indents.$xl;
+  padding-bottom: indents.$xl;
+  gap: indents.$m;
+
+  video {
+    border-radius: borders.$xl;
+  }
+}
+
+.StoresWrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: borders.$xl;
+  overflow: hidden;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
