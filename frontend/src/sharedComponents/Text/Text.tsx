@@ -1,6 +1,6 @@
 import { type FC } from 'react';
 import { type TextProps, sizes } from './';
-import './text.scss';
+import './Text.scss';
 
 export const Text: FC<TextProps> = ({ text, style = 'White', heading = '', size = 'm' }) => {
   const styles = { fontSize: sizes[size] };
