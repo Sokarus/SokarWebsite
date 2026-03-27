@@ -61,7 +61,7 @@ jobs:
           host: ${{ secrets.PROD_HOST }}
           username: ${{ secrets.PROD_USER }}
           key: ${{ secrets.PROD_SSH_KEY }}
-          source: "nginx/prod/nginx.conf"
+          source: "./nginx/prod/nginx.conf"
           target: "/tmp/nginx.conf"
 
       - name: Deploy via SSH
