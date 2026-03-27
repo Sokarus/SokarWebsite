@@ -80,7 +80,7 @@ jobs:
             chown -R www-data:www-data /var/www/sokar
             chmod -R 755 /var/www/sokar
 
-            cp /tmp/nginx.conf /etc/nginx/sites-available/sokar
+            cp /tmp/nginx/prod/nginx.conf /etc/nginx/sites-available/sokar
             ln -sf /etc/nginx/sites-available/sokar /etc/nginx/sites-enabled/sokar
             rm -f /etc/nginx/sites-enabled/default
             nginx -t
