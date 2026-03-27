@@ -64,7 +64,7 @@ jobs:
           username: ${{ secrets.PROD_USER }}
           key: ${{ secrets.PROD_SSH_KEY }}
           source: "./nginx/prod/nginx.conf"
-          target: "/tmp/nginx.conf"
+          target: "/tmp"
 
       - name: Deploy via SSH
         uses: appleboy/ssh-action@master
