@@ -1,6 +1,6 @@
 import { type FC } from 'react';
 import { Image, Text, Button } from '@/sharedComponents';
-import { type StoreProps } from './';
+import { type StoreProps } from '.';
 import './Store.scss';
 
 export const Store: FC<StoreProps> = ({ name, url, icon }) => {

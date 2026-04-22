@@ -1,0 +1,9 @@
+@use '../../sharedStyles/indents' as indents;
+
+.AlbumsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: indents.$l;
+  width: 100%;
+  text-align: center;
+}

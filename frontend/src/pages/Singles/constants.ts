@@ -1,7 +1,7 @@
 import { type SingleProps } from './Single';
 
 export const singles: SingleProps[] = [
-    {
+  {
     url: 'https://storage.yandexcloud.net/sokar/sokar-website/singles/sokar%20-%20%D1%8F%20%D0%B2%D0%B0%D1%81%20%D0%BB%D1%8E%D0%B1%D0%BB%D1%8E.mp4',
     name: 'Я вас люблю',
     stores: [

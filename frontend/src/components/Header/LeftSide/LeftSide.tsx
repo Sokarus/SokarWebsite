@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { type FC } from 'react';
-import { Button, Text } from '@/sharedComponents';
+import { Button, Text, Image } from '@/sharedComponents';
 import './LeftSide.scss';
 
 export const LeftSide: FC = () => {
@@ -15,7 +15,13 @@ export const LeftSide: FC = () => {
         link={'/'}
         selected={url === '/'}
       />
-      {/* <Button content={<Text text={t('albums')} size="xl" />} style="Ghost" link="/albums" /> */}
+      <Image src={'https://storage.yandexcloud.net/sokar/sokar_logo.png'} width={30} height={30} />
+      <Button
+        content={<Text text={t('albums')} size={'xl'} style={'Main'} />}
+        style={'Ghost'}
+        link={'/albums'}
+        selected={url === '/albums'}
+      />
       <Button
         content={<Text text={t('singles')} size={'xl'} style={'Main'} />}
         style={'Ghost'}

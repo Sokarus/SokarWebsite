@@ -7,3 +7,4 @@ export * from './InputText';
 export * from './Modal';
 export * from './Select';
 export * from './InputTextArea';
+export * from './Store';
