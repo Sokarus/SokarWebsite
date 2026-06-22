@@ -1,10 +1,25 @@
 import { type AlbumProps } from './Album';
 
 export const albums: AlbumProps[] = [
-    {
+  {
     url: 'https://storage.yandexcloud.net/sokar/sokar-website/albums/Another%20Arctic.mp4',
     name: 'Another Arctic',
     stores: [
+      {
+        name: 'VK Music',
+        url: 'https://vk.com/music/album/-2000148473_28148473_84e550bba832c87acd',
+        icon: 'https://storage.yandexcloud.net/sokar/sokar-website/stores/vk.png',
+      },
+      {
+        name: 'Yandex Music',
+        url: 'https://music.yandex.uz/album/42529955',
+        icon: 'https://storage.yandexcloud.net/sokar/sokar-website/stores/yandex.png',
+      },
+      {
+        name: 'YouTube Music',
+        url: 'https://music.youtube.com/playlist?list=OLAK5uy_nAlIRsFPQHHm24YXnc6h4CfDp2WFelJD8',
+        icon: 'https://storage.yandexcloud.net/sokar/sokar-website/stores/youtube.png',
+      },
       {
         name: 'Spotify',
         url: 'https://open.spotify.com/album/2gsZaW0UmB5aYuBglovxNH',
@@ -19,16 +34,6 @@ export const albums: AlbumProps[] = [
         name: 'Amazon Music',
         url: 'https://music.amazon.com/albums/B0H4M1TM2D',
         icon: 'https://storage.yandexcloud.net/sokar/sokar-website/stores/amazon.png',
-      },
-      {
-        name: 'YouTube Music',
-        url: 'https://music.youtube.com/playlist?list=OLAK5uy_nAlIRsFPQHHm24YXnc6h4CfDp2WFelJD8',
-        icon: 'https://storage.yandexcloud.net/sokar/sokar-website/stores/youtube.png',
-      },
-      {
-        name: 'Yandex Music',
-        url: 'https://music.yandex.uz/album/42529955',
-        icon: 'https://storage.yandexcloud.net/sokar/sokar-website/stores/yandex.png',
       },
     ],
   },
