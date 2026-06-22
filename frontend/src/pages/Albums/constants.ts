@@ -26,6 +26,11 @@ export const albums: AlbumProps[] = [
         icon: 'https://storage.yandexcloud.net/sokar/sokar-website/stores/spotify.png',
       },
       {
+        name: 'Soundcloud',
+        url: 'https://soundcloud.com/sokar_music/sets/another_arctic',
+        icon: 'https://storage.yandexcloud.net/sokar/sokar-website/stores/soundcloud.png',
+      },
+      {
         name: 'iTunes',
         url: 'http://itunes.apple.com/album/id/6778432230',
         icon: 'https://storage.yandexcloud.net/sokar/sokar-website/stores/itunes.png',
